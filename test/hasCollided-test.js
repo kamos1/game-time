@@ -33,7 +33,7 @@ describe('This is going to collide', () => {
   it('should collide', () => {
     var frogger = new Frogger(50,50);
     var car = new Enemy(50,50);
-    // eval(locus);
+  
     assert.equal(hasCollided(frogger, [car]),true)
   })
 
