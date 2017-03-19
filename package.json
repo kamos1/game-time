@@ -27,6 +27,7 @@
     "mocha": "^3.1.2",
     "mocha-loader": "^1.0.0",
     "node-libs-browser": "^1.0.0",
+    "sinon": "^2.0.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
