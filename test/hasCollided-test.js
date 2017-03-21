@@ -8,19 +8,63 @@ describe('This is going to collide', () => {
     assert.isFunction(hasCollided);
   });
 
-  it('should collide', () => {
-    const frogger = new Frogger(50, 50, 10, 10);
-    const enemy = new Enemy(50, 50, 10, 10);
+  it('should collide if frogger hits bottom of enemy', () => {
+    const frogger = new Frogger(50, 130.1, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
 
     assert.ok(hasCollided(frogger, [enemy]));
     assert.equal(frogger.y, 280);
   });
 
-  it('should not collide', () => {
-    const frogger = new Frogger(150, 50, 10, 10);
-    const enemy = new Enemy(50, 50, 10, 10);
-    
+  it('should collide if frogger hits top of enemy', () => {
+    const frogger = new Frogger(50, 169, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.ok(hasCollided(frogger, [enemy]));
+    assert.equal(frogger.y, 280);
+  });
+
+  it('should collide if frogger hits left of enemy', () => {
+    const frogger = new Frogger(99, 150, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.ok(hasCollided(frogger, [enemy]));
+    assert.equal(frogger.y, 280);
+  });
+
+  it('should collide if frogger hits right of enemy', () => {
+    const frogger = new Frogger(31, 150, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.ok(hasCollided(frogger, [enemy]));
+    assert.equal(frogger.y, 280);
+  });
+
+  it('should not collide if frogger is just below enemy', () => {
+    const frogger = new Frogger(50, 130, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
     assert.notOk(hasCollided(frogger, [enemy]));
-    assert.equal(frogger.y, 50);
+  });
+
+  it('should not collide if frogger is just above enemy', () => {
+    const frogger = new Frogger(50, 170, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.notOk(hasCollided(frogger, [enemy]));
+  });
+
+  it('should not collide if frogger is just to left of enemy', () => {
+    const frogger = new Frogger(30, 150, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.notOk(hasCollided(frogger, [enemy]));
+  });
+
+  it('should not collide if frogger is just to right of enemy', () => {
+    const frogger = new Frogger(100, 150, 20, 20);
+    const enemy = new Enemy(50, 150, 50, 20);
+
+    assert.notOk(hasCollided(frogger, [enemy]));
   });
 });
