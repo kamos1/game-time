@@ -4,12 +4,18 @@
   <meta charset="utf-8">
   <title>Game Time</title>
   <link rel="stylesheet" href="/lib/game.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
-    <canvas id="game" width="300" height="300"></canvas>
+  <header>
+    Frogger
+  </header>
+  <div class='wrap'>
+    <div id="track-wins">Wins:</div>
     <div id="user-message"></div>
-  </div>  
+    <div id="track-losses">Collisions:</div>
+  </div>
+  <canvas id="game" width="300" height="300"></canvas>
   <script src="main.bundle.js"></script>
 </body>
 </html>
