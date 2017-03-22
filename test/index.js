@@ -1,2 +1,3 @@
 require('./enemy-test');
-require('./hasCollided-test');
+require('./hasLost-test');
+require('./hasWon-test');

@@ -1,6 +1,12 @@
 body {
   font-family: 'Amatic SC', cursive;
+  display: flex;
 }
+
+.main-wrapper{
+  width: 60%
+}
+
 header {
   text-align: center;
   color: #006400;
@@ -24,7 +30,7 @@ canvas {
 .wrap {
   display: flex;
   margin: auto;
-  width: 60%;
+  width: 70%;
 }
 
 #user-message,
@@ -33,4 +39,9 @@ canvas {
   width: 33%;
   text-align: center;
   margin: 10px;
+}
+
+.game-instructions {
+  width: 30%;
+  margin-top: 10%;
 }
