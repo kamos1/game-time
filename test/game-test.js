@@ -26,10 +26,10 @@ describe('the game works', () => {
     assert.isOk(game.hasWon());
   });
 
-  it('has lost if frogger hits enemy', () => {
-
-    game.frogger.move()
-    console.log('test2', game);
-    assert.isOk(game.hasLost());
-  });
+  // it('has lost if frogger hits enemy', () => {
+  //
+  //   game.frogger.move()
+  //   console.log('test2', game);
+  //   assert.isOk(game.hasLost());
+  // });
 });
