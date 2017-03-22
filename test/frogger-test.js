@@ -2,16 +2,6 @@ const assert = require('chai').assert;
 const Frogger = require('../lib/Frogger');
 
 describe('This will test the Frogger class functionality', () => {
-  it('should be a function', () => {
-    assert.isFunction(Frogger);
-  });
-
-  it('should create a new instance of Frogger', () => {
-    let frogger = new Frogger();
-
-    assert.isObject(frogger);
-  });
-
   it('should move frogger up to 270 ', () => {
     let frogger = new Frogger(140, 280, 20, 20, "rgba(0, 255, 0 ,1)");
 

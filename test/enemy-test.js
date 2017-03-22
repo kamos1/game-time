@@ -2,16 +2,6 @@ const assert = require('chai').assert;
 const Enemy = require('../lib/Enemy');
 
 describe('This will test the Enemy class functionality', () => {
-  it('should be a function', () => {
-    assert.isFunction(Enemy);
-  });
-
-  it('should create a new instance of Enemy', () => {
-    let enemy1 = new Enemy();
-
-    assert.isObject(enemy1);
-  });
-
   it('should change enemy x value to 160', () => {
     let enemy1 = new Enemy(150, 50, 10, 10, 'green', 10);
 
