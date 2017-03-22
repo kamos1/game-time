@@ -1,4 +1,15 @@
-canvas, #user-message {
+body {
+  font-family: 'Amatic SC', cursive;
+}
+header {
+  text-align: center;
+  color: #006400;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+canvas,
+#user-message {
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
@@ -10,15 +21,14 @@ canvas {
   border: 1px solid black;
 }
 
-#user-message {
-  text-align: center;
-  margin-top: 50px;
+.wrap {
+  display: flex;
 }
 
-/*.wrap {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}*/
+#user-message,
+#track-wins,
+#track-losses {
+  width: 33%;
+  text-align: center;
+  margin: 10px;
+}
