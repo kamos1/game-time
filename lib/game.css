@@ -23,6 +23,8 @@ canvas {
 
 .wrap {
   display: flex;
+  margin: auto;
+  width: 60%;
 }
 
 #user-message,
