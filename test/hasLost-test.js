@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const hasLost = require('../lib/hasLost');
+// const hasLost = require('../lib/hasLost');
 const Enemy = require('../lib/Enemy');
 const Frogger = require('../lib/Frogger');
 
