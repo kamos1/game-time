@@ -45,3 +45,9 @@ canvas {
   width: 30%;
   margin-top: 10%;
 }
+
+#restart-button {
+  font-family: 'Amatic SC', cursive;
+  border: solid 1px #006400;
+  background-color: #FFF;
+}
