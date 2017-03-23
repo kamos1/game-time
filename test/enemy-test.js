@@ -15,5 +15,4 @@ describe('This will test the Enemy class functionality', () => {
     enemy1.move();
     assert.equal(enemy1.x, 0);
   });
-
 });

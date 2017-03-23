@@ -1,7 +1,4 @@
 const assert = require('chai').assert;
-const Lilypad = require('../lib/Lilypad');
-const Enemy = require('../lib/Enemy');
-const Frogger = require('../lib/Frogger');
 const Game = require('../lib/Game');
 
 describe('the game works', () => {
@@ -19,17 +16,15 @@ describe('the game works', () => {
     assert.isObject(game);
   });
 
-  it('has won should run if frogger hits lilypad', () => {
-
-    game.frogger.move(-70,-270)
-    console.log('test1', game);
+  it('hasWon() should run if frogger hits lilypad', () => {
+    game.frogger.move(-70, -270)
+    // console.log('test1', game);
     assert.isOk(game.hasWon());
   });
 
-  // it('has lost if frogger hits enemy', () => {
-  //
-  //   game.frogger.move()
-  //   console.log('test2', game);
-  //   assert.isOk(game.hasLost());
-  // });
+  it('has lost if frogger hits enemy', () => {
+    game.frogger.move(80, -111)
+    // console.log('test2', game);
+    assert.isOk(game.hasLost());
+  });
 });
