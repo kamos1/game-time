@@ -39,6 +39,4 @@ describe('This will test the Block class functionality', () => {
 
     assert.equal(block1.color, 'green');
   });
-
-
 });
